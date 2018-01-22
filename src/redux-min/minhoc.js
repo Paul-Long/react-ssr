@@ -28,6 +28,7 @@ export function createConnect() {
             return createElement(WrappedComponent, {
               color: this.context.store.color,
               count: this.context.store.count,
+              ...this.props,
               change: this.context.store.change
             })
           }

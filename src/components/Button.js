@@ -13,7 +13,7 @@ class Button extends React.Component {
   render() {
     return (<button style={{color: this.props.color}}
                     onClick={this.fClick}
-    >{`button-color-${this.props.color}`}</button>)
+    >{`${this.props.text}-${this.props.color}`}</button>)
   }
 }
 

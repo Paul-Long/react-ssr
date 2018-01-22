@@ -8,7 +8,7 @@ export class App extends Component {
     return (
       <Provider>
         <div>
-          <Button />
+          <Button text='颜色' />
           <Text />
         </div>
       </Provider>
