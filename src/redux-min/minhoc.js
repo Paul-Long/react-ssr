@@ -25,7 +25,11 @@ export function createConnect() {
           }
 
           render() {
-            return createElement(WrappedComponent, {color: this.context.store.color, change: this.context.store.change})
+            return createElement(WrappedComponent, {
+              color: this.context.store.color,
+              count: this.context.store.count,
+              change: this.context.store.change
+            })
           }
         }
 

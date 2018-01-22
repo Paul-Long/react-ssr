@@ -6,25 +6,27 @@ function providerFunc() {
     constructor(props) {
       super(props);
       this.store = {
-        color: 'red'
+        color: 'red',
+        count: 1
       };
       this.state = {
         store: {
-          color: 'red'
+          color: 'red',
+          count: 1
         }
       }
     }
 
     fChange = () => {
       this.store.color = this.store.color === 'red' ? 'blue' : 'red';
-      this.setState({store: {color: this.state.color === 'red' ? 'blue' : 'red'}});
+      this.store.count += 1;
+      this.setState({store: this.store});
     };
 
     getChildContext() {
-      console.log(this.store);
       return {
         store: {
-          color: this.store.color,
+          ...this.store,
           change: this.fChange
         }
       };
