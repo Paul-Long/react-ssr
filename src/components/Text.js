@@ -1,6 +1,7 @@
 import React from 'react';
 import {connectS} from '../redux-min';
 
+@connectS()
 class Text extends React.Component {
   render() {
     return (
@@ -9,4 +10,4 @@ class Text extends React.Component {
   }
 }
 
-export default connectS()(Text);
+export default Text;

@@ -1,6 +1,7 @@
 import React from 'react';
 import {connectS} from '../redux-min';
 
+@connectS()
 class Button extends React.Component {
   constructor(props) {
     super(props);
@@ -17,4 +18,4 @@ class Button extends React.Component {
   }
 }
 
-export default connectS()(Button);
+export default Button;
