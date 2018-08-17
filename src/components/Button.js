@@ -1,5 +1,6 @@
 import React from 'react';
 import {connectS} from '../redux-min';
+import './button.css';
 
 @connectS()
 class Button extends React.Component {
