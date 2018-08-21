@@ -1,3 +1,8 @@
+import  'css-modules-require-hook/preset';
+import assethook from 'asset-require-hook';
+assethook({
+  extensions: ['png', 'jpg']
+});
 import React from 'react';
 import {renderToString} from 'react-dom/server';
 import {App} from './src/app';
