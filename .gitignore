@@ -57,3 +57,12 @@ typings/
 # dotenv environment variables file
 .env
 
+.idea/dictionaries/
+.idea/inspectionProfiles/
+.idea/jsLibraryMappings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/react-ssr.iml
+.idea/workspace.xml
+dist/
+package-lock.json
